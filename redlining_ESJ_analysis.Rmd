@@ -3,52 +3,146 @@ title: 'EDS 223: assignment 2'
 author: "Flora Hamilton"
 output: html_document
 date: "2023-10-27"
+editor_options: 
+  markdown: 
+    wrap: sentence
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(include = TRUE, message = FALSE, warning = FALSE)
 ```
 
-## Overview
+# [Environmental Justice, Historical Redlining, and Biodiversity Observations]{.underline} 
 
-Present-day environmental justice may reflect legacies of injustice in the past. The United States has a long history of racial segregation which is still visible. During the 1930's the Home Owners' Loan Corporation (HOLC), as part of the New Deal, rated neighborhoods based on their perceived safety for real estate investment. Their ranking system, (A (green), B (blue), C (yellow), D (red)) was then used to block access to loans for home ownership. Colloquially known as "redlining", this practice has had widely-documented consequences not only for community wealth, but also health.^[Gee, G. C. (2008). A multilevel analysis of the relationship between institutional and individual racial discrimination and health status. American journal of public health, 98(Supplement_1), S48-S56.] Redlined neighborhoods have less greenery^[Nardone, A., Rudolph, K. E., Morello-Frosch, R., & Casey, J. A. (2021). Redlines and greenspace: the relationship between historical redlining and 2010 greenspace across the United States. Environmental health perspectives, 129(1), 017006.] and are hotter than other neighborhoods.^[Hoffman, J. S., Shandas, V., & Pendleton, N. (2020). The effects of historical housing policies on resident exposure to intra-urban heat: a study of 108 US urban areas. Climate, 8(1), 12.] 
+# A Historical Overview 
 
-Check out coverage by the [New York Times](https://www.nytimes.com/interactive/2020/08/24/climate/racism-redlining-cities-global-warming.html).
+Contemporary environmental justice issues often trace their roots back to historical injustices.
+The United States, with its enduring legacy of racial segregation, still bears visible traces of this problematic history.
 
-A recent study found that redlining has not only affected the environments communities are exposed to, it has also shaped our observations of biodiversity.^[Ellis-Soto, D., Chapman, M., & Locke, D. H. (2023). Historical redlining is associated with increasing geographical disparities in bird biodiversity sampling in the United States. Nature Human Behaviour, 1-9.] Community or citizen science, whereby individuals share observations of species, is generating an enormous volume of data. Ellis-Soto and co-authors found that redlined neighborhoods remain the most undersampled areas across 195 US cities. This gap is highly concerning, because conservation decisions are made based on these data.
+## Historical Context: Redlining and Its Impact
 
-Check out coverage by [EOS](https://eos.org/articles/bird-biodiversity-reports-reflect-cities-redlined-past?utm_source=EosBuzz&mkt_tok=OTg3LUlHVC01NzIAAAGOx3ckQPpeDY3QyFKdUnBSYqILj3qLrgb_Q2lasphwcF90xEzMgjZFUo3NHsw3caXDcZe6I8D8qdVsSRr3wzhb6LKAQRgNo8ffhjieEbDwMw).
+In the 1930s, as part of the New Deal, the Home Owners' Loan Corporation (HOLC) implemented a neighborhood rating system (A (green), B (blue), C (yellow), D (red)) to assess safety for real estate investment.
+This system, commonly known as "redlining," had profound consequences by denying access to loans for home ownership[^1].
 
+[^1]: Gee, G. C.
+    (2008).
+    A multilevel analysis of the relationship between institutional and individual racial discrimination and health status.
+    American journal of public health, 98(Supplement_1), S48-S56.
 
-### Data
-#### EJScreen
-We will be working with data from the United States Environmental Protection Agency's EJScreen: Environmental Justice Screening and Mapping Tool.
+The repercussions of redlining extend beyond economic aspects, impacting community wealth and health.
+Redlined neighborhoods exhibit lower greenery[^2] and higher temperatures compared to other areas[^3]
+.
+
+[^2]: Nardone, A., Rudolph, K. E., Morello-Frosch, R., & Casey, J. A.
+    (2021).
+    Redlines and greenspace: the relationship between historical redlining and 2010 greenspace across the United States.
+    Environmental health perspectives, 129(1), 017006.
+
+[^3]: Hoffman, J. S., Shandas, V., & Pendleton, N.
+    (2020).
+    The effects of historical housing policies on resident exposure to intra-urban heat: a study of 108 US urban areas.
+    Climate, 8(1), 12.
+
+-   Reference:
+    -   Gee, G. C.
+        (2008).
+        A multilevel analysis of the relationship between institutional and individual racial discrimination and health status.
+        *American Journal of Public Health, 98*(Supplement_1), S48-S56.
+
+    -   Nardone, A., Rudolph, K. E., Morello-Frosch, R., & Casey, J. A.
+        (2021).
+        Redlines and greenspace: the relationship between historical redlining and 2010 greenspace across the United States.
+        *Environmental Health Perspectives, 129*(1), 017006.
+
+    -   Hoffman, J. S., Shandas, V., & Pendleton, N.
+        (2020).
+        The effects of historical housing policies on resident exposure to intra-urban heat: a study of 108 US urban areas.
+        *Climate, 8*(1), 12.
+
+    -   [New York Times Coverage](https://www.nytimes.com/interactive/2020/08/24/climate/racism-redlining-cities-global-warming.html)
+
+## Biodiversity and Redlining: An Overlooked Connection
+
+Recent research has uncovered a broader impact of redlining on biodiversity observations.
+Community or citizen science, where individuals contribute species observations, generates extensive data.
+However, a study by Ellis-Soto and co-authors reveals that redlined neighborhoods remain significantly undersampled across 195 US cities, raising concerns about the implications for conservation decisions[^4].
+
+[^4]: Ellis-Soto, D., Chapman, M., & Locke, D. H.
+    (2023).
+    Historical redlining is associated with increasing geographical disparities in bird biodiversity sampling in the United States.
+    Nature Human Behaviour, 1-9.
+
+-   Reference:
+    -   Ellis-Soto, D., Chapman, M., & Locke, D. H.
+        (2023).
+        Historical redlining is associated with increasing geographical disparities in bird biodiversity sampling in the United States.
+        *Nature Human Behaviour, 1-9*.
+
+    -   [EOS Coverage](https://eos.org/articles/bird-biodiversity-reports-reflect-cities-redlined-past?utm_source=EosBuzz&mkt_tok=OTg3LUlHVC01NzIAAAGOx3ckQPpeDY3QyFKdUnBSYqILj3qLrgb_Q2lasphwcF90xEzMgjZFUo3NHsw3caXDcZe6I8D8qdVsSRr3wzhb6LKAQRgNo8ffhjieEbDwMw)
+
+# An Overview of the Workflow 
+
+The goals of this post are to:
+
+\- Investigate the legacy of redlining in current environmental (in)justice \
+- Investigate the legacy of redlining in biodiversity observations
+
+The analysis will utilize EJScreen data, acquired from the US EPA, to determine the local health risks communities face in regions of interest -- we designate the geographical context by HOLC grades, and use The [Global Biodiversity Information Facility](gbif.org) to source biodiversity observations.
+Observations include a location and date that a species was observed.
+
+**Spatial Skills:**
+
+-   Load vector/raster data
+
+-   Sub-setting
+
+-   Spatial Statistics
+
+-   Transformations / Projections
+
+-   Graphing Results
+
+# More About the Data
+
+## EJScreen
+
+This project will be working with data from the United States Environmental Protection Agency's EJScreen: Environmental Justice Screening and Mapping Tool.
 
 According to the [US EPA website](https://www.epa.gov/ejscreen/purposes-and-uses-ejscreen):
 
->This screening tool and data may be of interest to community residents or other stakeholders as they search for environmental or demographic information. It can also support a wide range of research and policy goals. The public has used EJScreen in many different locations and in many different ways.
+> This screening tool and data may be of interest to community residents or other stakeholders as they search for environmental or demographic information.
+> It can also support a wide range of research and policy goals.
+> The public has used EJScreen in many different locations and in many different ways.
 >
->EPA is sharing EJScreen with the public:  
-> - to be more transparent about how we consider environmental justice in our work,  
-> - to assist our stakeholders in making informed decisions about pursuing environmental justice and,   
-> - to create a common starting point between the agency and the public when looking at issues related to environmental justice. 
+> EPA is sharing EJScreen with the public:\
+> - to be more transparent about how we consider environmental justice in our work,\
+> - to assist our stakeholders in making informed decisions about pursuing environmental justice and,\
+> - to create a common starting point between the agency and the public when looking at issues related to environmental justice.
 
-EJScreen provides on environmental and demographic information for the US at the Census [tract](https://en.wikipedia.org/wiki/Census_tract) and [block group](https://en.wikipedia.org/wiki/Census_block_group) levels. You will be working with block group data that has been downloaded from the [EPA site](https://www.epa.gov/ejscreen/download-ejscreen-data). To understand the associated data columns, you will need to explore the Technical Documentation and column description spreadsheet available in the data folder. I also encourage you to explore the [limitations and caveats](https://www.epa.gov/ejscreen/limitations-and-caveats-using-ejscreen) of the data.
+EJScreen provides on environmental and demographic information for the US at the Census [tract](https://en.wikipedia.org/wiki/Census_tract) and [block group](https://en.wikipedia.org/wiki/Census_block_group) levels.
+I will be working with block group data that has been downloaded from the [EPA site](https://www.epa.gov/ejscreen/download-ejscreen-data).
+To understand the associated data columns, I've read the Technical Documentation and column description spreadsheet available in the data folder and explored the [limitations and caveats](https://www.epa.gov/ejscreen/limitations-and-caveats-using-ejscreen) of the data.
 
 #### Mapping Inequality
-A team of researchers, led by the [Digital Scholarship Lab](https://dsl.richmond.edu/) at the University of Richmond have digitized maps and information from the HOLC as part of the [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/#loc=5/39.1/-94.58) project. 
 
-We will be working with maps of HOLC grade designations for Los Angeles. Information on the data can be found [here](https://dsl.richmond.edu/panorama/redlining/#loc=5/39.1/-94.58&text=downloads).^[Robert K. Nelson, LaDale Winling, Richard Marciano, Nathan Connolly, et al., “Mapping Inequality,” American Panorama, ed. Robert K. Nelson and Edward L. Ayers, accessed October 17, 2023, https://dsl.richmond.edu/panorama/redlining/] 
+A team of researchers, led by the [Digital Scholarship Lab](https://dsl.richmond.edu/) at the University of Richmond have digitized maps and information from the HOLC as part of the [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/#loc=5/39.1/-94.58) project.
+
+We will be working with maps of HOLC grade designations for Los Angeles.
+Information on the data can be found [here](https://dsl.richmond.edu/panorama/redlining/#loc=5/39.1/-94.58&text=downloads).[^5]
+
+[^5]: Robert K. Nelson, LaDale Winling, Richard Marciano, Nathan Connolly, et al., "Mapping Inequality," American Panorama, ed.
+    Robert K. Nelson and Edward L. Ayers, accessed October 17, 2023, <https://dsl.richmond.edu/panorama/redlining/>
 
 #### Biodiversity observations
-The [Global Biodiversity Information Facility](gbif.org) is the largest aggregator of biodiversity observations in the world. Observations typically include a location and date that a species was observed.
+
+The [Global Biodiversity Information Facility](gbif.org) is the largest aggregator of biodiversity observations in the world.
+Observations typically include a location and date that a species was observed.
 
 We will be working observations of birds from 2021 onward.
 
-## Assignment
+# Part 1: Investigating the legacy of redlining in current environmental (in)justice
 
-### Investigate the legacy of redlining in current environmental (in)justice
-Load relevant packages.
+Loading relevant packages.
 
 ```{r include=TRUE, eval=TRUE}
 
@@ -66,9 +160,8 @@ library(tmap)
 
 ```
 
+Reading in EJScreen data and filter to Los Angeles County
 
-Read in EJScreen data and filter to Los Angeles County
-(5 points)
 ```{r include=TRUE, eval=TRUE}
 library(tidyverse)
 library(sf)
@@ -76,11 +169,11 @@ library(sf)
 # read in geodatabase of EJScreen data at the Census Block Group level
 ejscreen <- st_read("~/dev/eds223/assignment-2-floraham/Data/EJSCREEN_2023_BG_StatePct_with_AS_CNMI_GU_VI.gdb") 
 
-# filter to a state you are interested in
+# filter to a state of interest
 california <- ejscreen %>%
   filter(ST_ABBREV == "CA") 
 
-# filter to a county you are interested in
+# filter to a county of interest 
 LA_County <- ejscreen %>%
   filter(CNTY_NAME %in% c("Los Angeles County"))
 
@@ -88,12 +181,14 @@ LA_County <- ejscreen %>%
 california_counties <- aggregate(california, by = list(california$CNTY_NAME), FUN = mean)
 
 # find the centroid within each Census Block Group
-# this is helpful so you can plot Census Block Group data as points
+# this is helpful to plot Census Block Group data as points
 california_blockgroup_centroids <- st_centroid(california)
 LA_blockgroup_centroids <- st_centroid(LA_County)
 ```
-Make a map of wastewater discharge by census block groups. Indicate which census block groups are above the 95th percentile of national values for wastewater discharge by adding a centroid.
-(10 points)
+
+To start, I make a map of wastewater discharge by census block groups.
+I indicate which census block groups are above the 95th percentile of national values for wastewater discharge by adding a centroid.
+
 ```{r }
 # name for wastewater discharge pwdis
 #wastewater_95 = LA_County |> filter(P_PWDIS > 95)
@@ -102,41 +197,44 @@ tm_shape(LA_County) + tm_graticules(labels.size = 0.3) + tm_title("Wastewater Di
 
 
 ```
-Find the percent of census block groups that have:  
+
+Finding the percent of census block groups that have:\
 - less than 5% of the population is considered low income
-(5 points)
+
 ```{r }
 centroid_li5 <- LA_blockgroup_centroids |>  filter(LOWINCPCT < 0.05)
 
 print(paste(round(nrow(centroid_li5)/nrow(LA_blockgroup_centroids)*100,2), "%"))
 ```
 
-Find the percent of census block groups that are:    
-- above the 80th percentile for Particulate Matter 2.5 AND  
+Finding the percent of census block groups that are:\
+- above the 80th percentile for Particulate Matter 2.5 AND\
 - above the 80th percentile for Superfund proximity
-(10 points)
+
 ```{r }
 
 centroid_pm25 <- LA_blockgroup_centroids |>  filter(P_PM25 > 80 & P_PNPL > 80)
 
 print(paste(round(nrow(centroid_pm25)/nrow(LA_blockgroup_centroids)*100,3), "%"))
 ```
+
 Import redlining information for Los Angeles.
+
 ```{r }
 LA_redlining <- st_read("https://dsl.richmond.edu/panorama/redlining/static/downloads/geojson/CALosAngeles1939.geojson") %>% 
   st_make_valid()
 
 ```
 
-Make a map of historical redlining boundaries, colored by HOLC grade.
-(5 points)
+I then make a map of historical redlining boundaries, colored by HOLC grade.
+
 ```{r }
  tm_shape(LA_redlining)  + tm_graticules() + tm_fill("holc_grade", title = "HOLC Grade", col = "red") + tm_shape(LA_County)  + tm_borders(col = "grey", col_alpha = 0.3) + tm_title( "Historical Redlining Boundaries, Colored by HOLC Grade") + tm_scalebar(position = c("RIGHT", "BOTTOM")) + tm_compass(position = c("LEFT", "BOTTOM")) + tm_xlab("Longitude", size = 0.5) + tm_ylab("Latitude", rotation = 90, size = 0.5) 
 
 ```
-Find the number of census block groups that fall within areas with HOLC grades
-hint: make sure the CRS match
-(15 points)
+
+Next, I will find the number of census block groups that fall within areas with HOLC grades, making sure the CRS match.
+
 ```{r eval=TRUE}
 ## Check CRS of objects: 
 st_crs(LA_County) ## WGS 84 PseudoMercator 
@@ -162,12 +260,12 @@ nrow(intersected)
 
 ```
 
-Summarize current conditions based on EJScreen data within historical redlining categories using the mean of the following variables:  
-- % low income.  
-- percentile for particulate Matter 2.5.  
-- percentile for low life expectancy.  
+I will summarize current conditions based on EJScreen data within historical redlining categories using the mean of the following variables:\
+- % low income.\
+- percentile for particulate Matter 2.5.\
+- percentile for low life expectancy.\
 - percentile for air toxics cancer risk
-(20 points)
+
 ```{r }
 intersected_grouped <- intersected %>% group_by(holc_grade) %>% summarise(mean_low_inc = mean(LOWINCPCT, na.rm = TRUE), 
                                                                           perc_PM25 = mean(P_PM25, na.rm = TRUE),
@@ -177,19 +275,18 @@ View(intersected_grouped)
 
 ```
 
-Please write 2-3 sentences reflecting on these results.
-(5 points)
+### Results Discussion 
 
-By evaluating mean percentile distributions across historical redlining categories of the variables: % low income , PM2.5 , life expectancy percentile, and air toxics cancer risk percentile, we can the see disproportionate effects of these variables across HOLC grade categories. Through the data, we see the following patterns: the proportion of low income households increase while HOLC grades decline, percentile PM2.5 risk levels increase as HOLC grades decline, percentile for low life expectancy increases as HOLC grades decline, and cancer risk increases while HOLC grades decline. The results align with my expectations, and seem to show a negative correlation between HOLC grade levels and health risks across all variables: as HOLC grades decline, health risks increase for those living there. 
+By evaluating mean percentile distributions across historical redlining categories of the variables: % low income , PM2.5 , life expectancy percentile, and air toxics cancer risk percentile, we can the see disproportionate effects of these variables across HOLC grade categories.
+Through the data, we see the following patterns: the proportion of low income households increase while HOLC grades decline, percentile PM2.5 risk levels increase as HOLC grades decline, percentile for low life expectancy increases as HOLC grades decline, and cancer risk increases while HOLC grades decline.
+The results align with my expectations, and seem to show a negative correlation between HOLC grade levels and health risks across all variables: as HOLC grades decline, health risks increase for those living there.
 
-
-
-### Investigate the legacy of redlining in biodiversity observations
+# Part 2: Investigating the legacy of redlining in biodiversity observations
 
 For bird observations from 2022 that fall within neighborhoods with HOLC grads, find the percent of observations within each redlining categories and plot results.
 hint: make sure that the bird observations have the same CRS as redlining data.
-(20 points)
-````{r }
+
+```{r }
 birds <- read_sf('~/dev/eds223/assignment-2-floraham/Data/gbif-birds-LA')
 
 ## Check CRS equivalence
@@ -222,15 +319,12 @@ bird22_intersect_sum %>% ggplot(aes(x=holc_grade, y=perc_obs_inHOLC)) + geom_bar
   labs(title = "Bird Observation Distribution by HOLC grade",
        x = "HOLC Grade",
        y = "% Observations in HOLC Category")
-````
+```
 
-Please write 2-3 sentences reflecting on these results. Are they surprising? If so, why? What are some potential implications?
-(5 points)
+### Results discussion 
 
-The results show that a higher proportion of observations occur in lower HOLC grade locations. This is somewhat counter-intuitive, as it is easy to assume that birds would "prefer" rural and green spaces (which are more prevalent in high income neighborhoods than low income neighborhoods) to highly dense urban areas. 
-However, urban zones often provide high food availability, more areas of shelter, and lower predation pressure, creating more habitable environments for some bird species --  especially pigeons, sparrows, blackbirds, crows, and swallows. The observations, though, should not be conflated with species richness. The abundance of birds in urban areas could increase the health and safety risk of the low-income communities in those areas, as bird droppings and feathers carry disease-causing pathogens and are highly corrosive to paint. 
-
-
-
-
-
+The results show that a higher proportion of observations occur in lower HOLC grade locations.
+This is somewhat counter-intuitive, as it is easy to assume that birds would "prefer" rural and green spaces (which are more prevalent in high income neighborhoods than low income neighborhoods) to highly dense urban areas.
+However, urban zones often provide high food availability, more areas of shelter, and lower predation pressure, creating more habitable environments for some bird species -- especially pigeons, sparrows, blackbirds, crows, and swallows.
+The observations, though, should not be conflated with species richness.
+The abundance of birds in urban areas could increase the health and safety risk of the low-income communities in those areas, as bird droppings and feathers carry disease-causing pathogens and are highly corrosive to paint.
