@@ -2,8 +2,7 @@
 
 
 
-# Repo Structure 
-redlining-ESJ-analysis
+EDS223-assignment2
 │   README.md
 │   Rmd/Proj files    
 │
