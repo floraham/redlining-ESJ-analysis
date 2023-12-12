@@ -15,4 +15,4 @@ EDS223-assignment2
     |   biodiversity data: gbif-birds-LA/gbif-birds-LA.shp
 ```
 ## **Note:** 
-The data associated with this analysis is too large to include in the GitHub repo. Instead, download data from [here](https://drive.google.com/file/d/1lcazRbNSmP8Vj9sH1AIJcO4D1d_ulJij/view?usp=share_link). Unzip the folder and all the contents and store in your directory as follows. Don't include data (make sure that the .gitignore includes /data) 
+The data associated with this analysis is too large to include in the GitHub repo. Instead, download data from [here](https://drive.google.com/file/d/1lcazRbNSmP8Vj9sH1AIJcO4D1d_ulJij/view?usp=share_link). Unzip the folder and all the contents and store in a directory with the structure as outlined above. Don't include data (make sure that the .gitignore includes /data) 
